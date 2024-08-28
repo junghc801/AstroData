@@ -3,12 +3,12 @@ import astropy.constants as const
 import numpy as np
 
 # calculating orbital velocity of Earth around the Sun
-G = const.G
-M = 1 * u.solMass
-R = 1 * u.au
+G = const.G       # G as the gravitation constant
+M = 1 * u.solMass # physical qunatity with a value and a unit.
+R = 1 * u.au      # radius of the Earth's orbit around the Sun in astronomical unit
 
 
-V = np.sqrt(G * M / R)
+V = np.sqrt(G * M / R)  # 
 print(V.to(u.km/u.s))
 
 # calculating orbital velocity of a satellite around the Earth
