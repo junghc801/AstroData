@@ -3,7 +3,7 @@ import astropy.constants as const
 import numpy as np
 
 '''
-Calcualte the orbital velocity
+Calculate the orbital velocity
 @intput: mass, radius
 @output: orbital velocity
 '''
@@ -20,7 +20,7 @@ V = orbita_velocity(M, R)
 print(V.to(u.km/u.s))
 
 '''calculating the orbital velocity of a satellite around the Earth'''
-M_Earth = 1 * u.earthMAss
+M_Earth = 1 * u.earthMass
 R_Satellite = 1 * u.earthRad
 V_Satellite = orbital_velocity(M_Earth, R_Satellite)
 print(V_Satellite.to(u.km/u.s))
